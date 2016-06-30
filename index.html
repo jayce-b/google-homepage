@@ -9,7 +9,10 @@
 		<title>Google - Page d'Accueil</title>
 
 <!--Responsive tag-->
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- css tag -->
+		<link rel="stylesheet" type="text/css" href="style.css">
 
 <!--Favicon tag-->
 		<link rel="icon" type="image/png" href="img/google-favicon.png"/>
@@ -21,12 +24,23 @@
 <!--Header will contain picto and links-->
 <!-- begin header -->
 		<header>
-			<ul>
-				<li><a href="https://mail.google.com/">Gmail</a></li>
-				<li><a href="https://www.google.fr/imghp?hl=fr&tab=wi&authuser=0&ei=N-FzV9qzJOjHgAb_gp7IDw&ved=0EKouCBQoAQ">Images</a></li>
-				<li><img src="img/bell.png"></li>
-				<li><img src="img/grid.png"></li>
-			</ul>
+
+			<nav>
+				<ul>
+
+					<li><a href="https://mail.google.com/">Gmail</a></li>
+
+					<li><a href="https://www.google.fr/imghp?hl=fr&tab=wi&authuser=0&ei=N-FzV9qzJOjHgAb_gp7IDw&ved=0EKouCBQoAQ">Images</a></li>
+
+					<li><a href="https://www.google.fr/intl/fr/about/products/"><img src="img/bell.png"></a></li>
+
+					<li><img src="img/grid.png"></li>
+
+					<li><img src="img/picto_profil.png"></li>
+
+				</ul>
+
+			</nav>
 
 		</header>
 <!-- end header -->
@@ -35,39 +49,61 @@
 
 <!-- begin section -->
 
-		<section>
+		<section class="logo">
 
 			<img src="img/logo-google.png">
 
 		</section>
 
-		<section>
 
-			<form action="http://google.com/search" method="get">
 
-				<input type="text" name="q">
+		<center><section class="SearchBarKit">
 
-				<input type="submit" value="Recherche Google"/>
-				<input type="submit" value="J'ai de la chance"/>
+			<form  action="http://google.com/search" method="get">
+
+				<input id="searchbar" type="text" name="q">
+
+			<div>
+
+				<input class="button" type="submit" value="Recherche Google"/>
+
+				<input class="button" type="submit" value="J'ai de la chance"/>
+
+			</div>
 
 			</form>
 
-		</section>
+		</section></center>
 <!-- end section -->
 
 <!--begin footer-->
 
 		<footer>
-			<ul>
-				<li>Publicité</li>
-				<li>Entreprise</li>
-				<li>A propos</li>
-			</ul>	
-			<ul>
-				<li>Confidentialité</li>
-				<li>Conditions</li>
-				<li>Paramètres</li>
-			</ul>
+
+			<nav class="FooterNav">
+
+				<ul class="FooterNavLeft">
+
+					<li><a href="https://www.google.fr/intl/fr/ads/?fg=1">Publicité</a></li>
+
+					<li><a href="https://www.google.fr/services/?fg=1">Entreprise</a></li>
+
+					<li><a href="https://www.google.fr/intl/fr/about.html?fg=1">A propos</a></li>
+
+				</ul>
+
+				<ul class="FooterNavRight">
+
+					<li><a href="https://www.google.fr/intl/fr/policies/privacy/?fg=1">Confidentialité</a></li>
+
+					<li><a href="https://www.google.fr/intl/fr/policies/terms/regional.html">Conditions</a></li>
+
+					<li><a href="https://www.google.fr/preferences?hl=fr&fg=1">Paramètres</a></li>
+
+				</ul>
+
+			</nav>
+
 		</footer>
 <!-- end footer  -->
 
