@@ -4,15 +4,27 @@
 /*###############################################*/
 /*###############################################*/
 
+
+/*-------all the document-------*/
 *
 {
 	font-family: arial;
 	font-size: 0.975em;
 }
 
+
+/*-------only the header-------*/
+ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
 a:link, a:visited
 {
 	color:#636262;
+	text-decoration: none;
 
 }
 
@@ -22,42 +34,56 @@ a:hover
 }
 
 
-.FooterNav
-{
-
-}
-
-ul
-{
-	
-	list-style-type: none;
-	display: flex;
-	justify-content: flex-end;
-}
-
-.LeftFooterNav
-{
-	display:flex;
-	justify-content: flex-start;
-}
-
+/*------only the body-------*/
 .logo
 {
     text-align: center;
+    margin-top: 10%;
+}
+
+.SearchBarKit
+{
+	text-align: center;
 }
 
 #searchbar
 {
 	text-align: center;
 	margin-bottom: 5%;
-
+	width: 70%;
 }
 
 .button
 {
 	display:inline-block;
+	border: none;
+	background-color: #e4e4e4;
+	padding: 1%;
+	color:#636262;
+
 
 }
+
+/*------only the footer------*/
+
+
+ footer
+ {
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	background-color: #f2f2f2;
+ 	border-top: solid 1px #e4e4e4;
+ }
+
+.LeftFooter, .RightFooter
+{
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
 
 
 
@@ -70,6 +96,8 @@ ul
 
 
 
+/*-------------same as mobile-----------------*/
+
 }
 
 
@@ -80,6 +108,13 @@ ul
 /*###############################################*/
 @media (min-width: 980px) {
 
+
+footer
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
 
 }
