@@ -22,9 +22,8 @@ a:hover
 }
 
 
-.HeaderNav
+.FooterNav
 {
-
 
 }
 
@@ -36,7 +35,11 @@ ul
 	justify-content: flex-end;
 }
 
-
+.LeftFooterNav
+{
+	display:flex;
+	justify-content: flex-start;
+}
 
 .logo
 {
